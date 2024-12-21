@@ -16,11 +16,12 @@
   text-align: center;
   font-size: var(--size-sm);
   color: var(--clr-slate400);
+  margin-bottom: 1rem;
 }
 
 .project__list{
   width: 100%;
-  max-width: 75ch;
+  max-width: 65ch;
 }
 
 .project__item:not(:last-child){
@@ -58,6 +59,9 @@
 @media (min-width: 1024px) {
   .project__title{
     font-size: var(--size-4xl);
+  }
+  .project__item{
+    font-size: var(--size-lg);
   }
 }
 

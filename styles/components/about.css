@@ -16,6 +16,12 @@
   font-size: var(--size-2xl);
   color: var(--clr-light);
 }
+.about__title-2 {
+  font-size: var(--size-2xl);
+  color: var(--clr-light);
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
 .about__description {
   max-width: 65ch;
@@ -26,6 +32,7 @@
 .about__hr {
   border-color: var(--clr-slate800);
   width: 60%;
+  max-width: 50ch;
 }
 
 .about__subtitle {
@@ -34,6 +41,11 @@
 }
 
 .about__ul-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .about__ul {
