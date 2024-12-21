@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="sudoer it soultion website" />
+    <meta name="keywords" content="web design, html, css, js, ai , ml , web Development" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" type="" href="./styles/style.css">
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#project">Project</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#project">Project</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <h1 class="hero__title">
+          SUDOER IT <br /> SOLUTIONS
+        </h1>
+        <p class="hero__description">
+        Unlock the power of <strong>high-quality</strong>, ready-to-use college projects that help you shine! <strong>Save time, reduce stress, and boost your grades</strong> with projects designed for excellence.
+        </p>
+        <p class="hero__description">Start Exploring Your Perfect Project Today!</p>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+          At <strong>Sudoer IT Solutions</strong>, we specialize in crafting cutting-edge projects in Machine Learning (ML), Artificial Intelligence (AI), Deep Learning (DL), and Web Development. Our team is dedicated to delivering <strong>innovative, high-quality solutions</strong>  tailored to meet the unique needs of students and professionals alike.
+          </p>
+          <p class="about__description">
+          We understand that every project is different, and that's why we take the time to listen to your ideas and collaborate with you. Whether you're looking for a project to showcase your skills or need a customized solution for your coursework, we work closely with you to create the perfect project that aligns with your vision and goals.
+          </p>
+          <hr class="about__hr" />
+          <h2 class="about__title">Why Choose Us?
+</h2>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__description"> We bring you the latest in <strong>ML, AI, DL, and Web Development</strong> to ensure your project stands out.
+              </li>
+              <li class="about__description">
+                Your ideas matter! We believe in co-creating projects that reflect your personal goals and academic requirements.
+              </li>
+              <li class="about__description">
+                We deliver polished, professional projects that are designed for success, ensuring you impress both professors and peers.
+
+              </li>
+            </ul>
+            <p class="about__description">
+At Sudoer IT Solutions, your project is more than just an assignment—it's an opportunity to shine. Let us help you bring your ideas to life with precision and creativity.
+            </p>
+          </div>
+      </section>
+      </section>
+      <section id="project" class="project container section">
+        <h2 class="project__title">Projects</h2>
+        <h3 class="project__subtitle">AI,ML,DL Projects</h3>
+        <div class="project__list">
+          <div class="project__item">
+          <p>
+          1. Chronic Obstructive Pulmonary Disease Prediction System
+          </p>
+          <a href="">document</a>  
+          </div>
+          <div class="project__item">
+          <p>
+
+2.	Liver Cirrhosis Prediction System using Machine Learning
+          </p>
+          <a href="">document</a>  
+          </div>
+          <div class="project__item">
+          <p>
+3.	Multiple Disease Prediction System using Machine Learning
+          </p>
+          <a href="">document</a>  
+          </div>
+          <div class="project__item">
+          <p>
+4.	Stroke Prediction System using Linear Regression
+          </p>
+          <a href="">document</a>  
+          </div>
+          
+          <div class="project__item">
+          <p>
+5.	Heart Failure Prediction System
+          </p>
+          <a href="">document</a>  
+          </div>
+          <div class="project__item">
+          <p>
+6.	Pneumonia Detection using Chest X-Ray
+          </p>
+          <a href="">document</a>  
+          </div>
+        </section>
+          
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+        Got an idea or still brainstorming? No worries!<strong> At Sudoer IT Solutions</strong> , we’re here to help you bring<strong> your final-year project</strong> to life, no matter where you are in the process. Whether you have a fully-formed concept or need expert guidance to shape your vision, our team is ready to collaborate with you to create a project that stands out.
+
+        <strong>Reach out to us today</strong>, and let’s turn your ideas into a successful, impressive project that you can be proud of!
+        </p>
+        <a
+          class="contact__btn btn"
+          href="mailto:sudoeritsoultion@gmail.com"
+          target="_blank"
+          >React Out</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ sudoer it solutions ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
