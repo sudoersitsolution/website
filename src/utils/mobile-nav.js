@@ -25,5 +25,4 @@ const mobileNav = () => {
     });
   });
 };
-
-export default mobileNav;
+mobileNav()
