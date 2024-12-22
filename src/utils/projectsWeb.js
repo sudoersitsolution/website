@@ -1,33 +1,33 @@
 const projectAddItemWeb = () => {
   const projectsWeb= [
-    { title: "Chronic Obstructive Pulmonary Disease Prediction System", link: "" },
-    { title: "Liver Cirrhosis Prediction System using Random Forest", link: "" },
-    { title: "Multiple Disease Prediction System using Machine Learning", link: "" },
-    { title: "Stroke Prediction System using Linear Regression", link: "" },
-    { title: "Heart Failure Prediction System", link: "" },
-    { title: "Pneumonia Detection using Chest X-Ray", link: "" },
-    { title: "Parkinson’s Detection System using Python", link: "" },
-    { title: "Breast Cancer Prediction using Naive Bayes", link: "" },
-    { title: "Depression Detection System using Python", link: "" },
-    { title: "Credit Card Fraud Detection System Python", link: "" },
-    { title: "Fake Product Review Monitoring and Removal for Genuine Ratings", link: "" },
-    { title: "Movie Success Prediction System using Python", link: "" },
-    { title: "Predicting House Price Using Decision Tree", link: "" },
-    { title: "Cryptocurrency Price Prediction Using Machine Learning Python", link: "" },
-    { title: "TV Show Popularity Analysis Using Data Mining", link: "" },
-    { title: "Music Genres Classification using KNN System", link: "" },
-    { title: "Personality Prediction System Through CV Analysis", link: "" },
-    { title: "Malware Analysis and Detection Using Machine Learning Algorithm", link: "" },
-    { title: "SMS Spam Detection using Machine Learning", link: "" },
-    { title: "Sleep Disorder Prediction Using Machine Learning", link: "" },
-    { title: "Drug Addiction Prediction Using Machine Learning", link: "" },
-    { title: "Obesity Risk Prediction using Machine Learning", link: "" },
-    { title: "Health Insurance Price Prediction using Machine Learning", link: "" },
-    { title: "Smart Diabetes Prediction System Using Machine Learning Algorithms", link: "" },
-    { title: "Customer Churn Prediction using Machine Learning", link: "" },
-    { title: "Real Estate Price Prediction using Machine Learning", link: "" },
-    { title: "Bitcoin Price Prediction using Machine Learning", link: "" },
-    { title: "Sleep Time Prediction", link: "" },
+{title: "exam seating arrangement system",description: "to-do description"},
+{title: "vu alumni-student connectbook",description:"to-do description"},
+{title: "career counseling platform",description:"to-do description"},
+{title: "mcq based test system for exam prepration",description:"to-do description"},
+{title: "recipe finder application",description:"to-do description"},
+{title: "Secure Voting System Using Blockchain",description:"to-do description"},
+{title: "personalized nutrition and fitness management system",description:"to-do description"},
+{title: "online tutor finding application",description:"to-do description"},
+{title: "health tracker monitor and record health data",description:"to-do description"},
+{title: "Online book exchange platform ",description:"to-do description"},
+{title: "Online cosmetics store ",description:"to-do description"},
+{title: "Online tourist guide",description:"to-do description"},
+{title: "Expense tracker application",description:"to-do description"},
+{title: "Stationary shop management system",description:"to-do description"},
+{title: "Patient Record Management system",description:"to-do description"},
+{title: "Advance attendence using QR code",description:"to-do description"},
+{ title: "Personality Prediction System Through CV Analysis", description: "to-do description" },
+{ title: "Malware Analysis and Detection Using Machine Learning Algorithm", description: "to-do description" },
+{ title: "SMS Spam Detection using Machine Learning", description: "to-do description" },
+{ title: "Sleep Disorder Prediction Using Machine Learning", description: "to-do description" },
+{ title: "Drug Addiction Prediction Using Machine Learning", description: "to-do description" },
+{ title: "Obesity Risk Prediction using Machine Learning", description: "to-do description" },
+{ title: "Health Insurance Price Prediction using Machine Learning", description: "to-do description" },
+{ title: "Smart Diabetes Prediction System Using Machine Learning Algorithms", description: "to-do description" },
+{ title: "Customer Churn Prediction using Machine Learning", description: "to-do description" },
+{ title: "Real Estate Price Prediction using Machine Learning", description: "to-do description" },
+{ title: "Bitcoin Price Prediction using Machine Learning", description: "to-do description" },
+{ title: "Sleep Time Prediction", description: "to-do description" },
   ];
 
   const itemsPerPageWeb = 5; // Number of items per page
@@ -42,9 +42,11 @@ const projectAddItemWeb = () => {
     let elementsWeb = "";
     visibleProjectsWeb.forEach((item, index) => {
       elementsWeb += `
-        <div class="project__item">
-          <p>${startIndexWeb + index + 1}. ${item.title}</p>
-          <a href="${item.link}">document</a>  
+      <div class="project__item-wrapper">
+        <div class="project__item-web">
+          <p>${startIndexWeb + index + 1}. ${item.title}</p> <span class="project__item-plus">+</span>  
+        </div>
+          <p class="project__item-description">${item.description}</p>
         </div>
       `;
     });
@@ -67,6 +69,18 @@ const projectAddItemWeb = () => {
 
     const paginationContainerWeb = document.querySelector(".pagination-web");
     paginationContainerWeb.innerHTML = paginationControlsWeb;
+ const accordionHeadersWeb = document.querySelectorAll('.project__item-web');
+  accordionHeadersWeb.forEach(header => {
+    header.addEventListener('click', function () {
+      const item = this.nextElementSibling;
+      const secondChild = this.children[1]; 
+      if(secondChild.textContent=="+")
+        secondChild.textContent= "-"
+      else
+        secondChild.textContent="+"
+      item.classList.toggle('active');
+    });
+  });
 
     // Add event listeners for buttons
     document.getElementById("prev-web").addEventListener("click", () => {

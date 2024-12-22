@@ -1,34 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
 const projectAddItem = () => {
   const projects = [
-    { title: "Chronic Obstructive Pulmonary Disease Prediction System", link: "" },
-    { title: "Liver Cirrhosis Prediction System using Random Forest", link: "" },
-    { title: "Multiple Disease Prediction System using Machine Learning", link: "" },
-    { title: "Stroke Prediction System using Linear Regression", link: "" },
-    { title: "Heart Failure Prediction System", link: "" },
-    { title: "Pneumonia Detection using Chest X-Ray", link: "" },
-    { title: "Parkinson’s Detection System using Python", link: "" },
-    { title: "Breast Cancer Prediction using Naive Bayes", link: "" },
-    { title: "Depression Detection System using Python", link: "" },
-    { title: "Credit Card Fraud Detection System Python", link: "" },
-    { title: "Fake Product Review Monitoring and Removal for Genuine Ratings", link: "" },
-    { title: "Movie Success Prediction System using Python", link: "" },
-    { title: "Predicting House Price Using Decision Tree", link: "" },
-    { title: "Cryptocurrency Price Prediction Using Machine Learning Python", link: "" },
-    { title: "TV Show Popularity Analysis Using Data Mining", link: "" },
-    { title: "Music Genres Classification using KNN System", link: "" },
-    { title: "Personality Prediction System Through CV Analysis", link: "" },
-    { title: "Malware Analysis and Detection Using Machine Learning Algorithm", link: "" },
-    { title: "SMS Spam Detection using Machine Learning", link: "" },
-    { title: "Sleep Disorder Prediction Using Machine Learning", link: "" },
-    { title: "Drug Addiction Prediction Using Machine Learning", link: "" },
-    { title: "Obesity Risk Prediction using Machine Learning", link: "" },
-    { title: "Health Insurance Price Prediction using Machine Learning", link: "" },
-    { title: "Smart Diabetes Prediction System Using Machine Learning Algorithms", link: "" },
-    { title: "Customer Churn Prediction using Machine Learning", link: "" },
-    { title: "Real Estate Price Prediction using Machine Learning", link: "" },
-    { title: "Bitcoin Price Prediction using Machine Learning", link: "" },
-    { title: "Sleep Time Prediction", link: "" },
+    { title: "Chronic Obstructive Pulmonary Disease Prediction System",description:"to-do description" },
+    { title: "Liver Cirrhosis Prediction System using Random Forest", description:"to-do description" },
+    { title: "Multiple Disease Prediction System using Machine Learning",description:"to-do description" },
+    { title: "Stroke Prediction System using Linear Regression", description:"to-do description" },
+    { title: "Heart Failure Prediction System", description:"to-do description" },
+    { title: "Pneumonia Detection using Chest X-Ray", description:"to-do description" },
+    { title: "Parkinson’s Detection System using Python", description:"to-do description" },
+    { title: "Breast Cancer Prediction using Naive Bayes", description:"to-do description" },
+    { title: "Depression Detection System using Python", description:"to-do description" },
+    { title: "Credit Card Fraud Detection System Python", description:"to-do description" },
+    { title: "Fake Product Review Monitoring and Removal for Genuine Ratings", description:"to-do description" },
+    { title: "Movie Success Prediction System using Python", description:"to-do description" },
+    { title: "Predicting House Price Using Decision Tree", description:"to-do description" },
+    { title: "Cryptocurrency Price Prediction Using Machine Learning Python", description:"to-do description" },
+    { title: "TV Show Popularity Analysis Using Data Mining", description:"to-do description" },
+    { title: "Music Genres Classification using KNN System", description:"to-do description" },
+    { title: "Personality Prediction System Through CV Analysis", description:"to-do description" },
+    { title: "Malware Analysis and Detection Using Machine Learning Algorithm", description:"to-do description" },
+    { title: "SMS Spam Detection using Machine Learning", description:"to-do description" },
+    { title: "Sleep Disorder Prediction Using Machine Learning", description:"to-do description" },
+    { title: "Drug Addiction Prediction Using Machine Learning", description:"to-do description" },
+    { title: "Obesity Risk Prediction using Machine Learning", description:"to-do description" },
+    { title: "Health Insurance Price Prediction using Machine Learning", description:"to-do description" },
+    { title: "Smart Diabetes Prediction System Using Machine Learning Algorithms", description:"to-do description" },
+    { title: "Customer Churn Prediction using Machine Learning", description:"to-do description" },
+    { title: "Real Estate Price Prediction using Machine Learning", description:"to-do description" },
+    { title: "Bitcoin Price Prediction using Machine Learning", description:"to-do description" },
+    { title: "Sleep Time Prediction", description:"to-do description" },
   ];
 
   const itemsPerPage = 5; // Number of items per page
@@ -43,10 +43,12 @@ const projectAddItem = () => {
     let elements = "";
     visibleProjects.forEach((item, index) => {
       elements += `
+      <div class="project__item-wrapper">
         <div class="project__item">
-          <p>${startIndex + index + 1}. ${item.title}</p>
-          <a href="${item.link}">document</a>  
+          <p>${startIndex + index + 1}. ${item.title}</p> <span class="project__item-plus">+</span>  
         </div>
+        <p class="project__item-description">${item.description}</p>
+      </div>
       `;
     });
     const PreviousButton=`
@@ -69,6 +71,18 @@ const projectAddItem = () => {
     const paginationContainer = document.querySelector(".pagination-ai");
     paginationContainer.innerHTML = paginationControls;
 
+ const accordionHeaders = document.querySelectorAll('.project__item');
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', function () {
+      const item = this.nextElementSibling;
+      const secondChild = this.children[1]; 
+      if(secondChild.textContent=="+")
+        secondChild.textContent= "-"
+      else
+        secondChild.textContent="+"
+      item.classList.toggle('active');
+    });
+  });
     // Add event listeners for buttons
     document.getElementById("prev").addEventListener("click", () => {
       if (currentPage > 1) {
@@ -84,6 +98,7 @@ const projectAddItem = () => {
       }
     });
   };
+
 
   renderProjects();
 };
