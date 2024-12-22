@@ -55,6 +55,13 @@
 .contact__btn {
   font-size: var(--size-sm);
 }
+.contact__icons a{
+
+  transition: all ease ,transform 0.3s ease;
+}
+.contact__icons a:hover{
+  transform: scale(1.2);
+}
 
 /* xs */
 @media (min-width: 475px) {
