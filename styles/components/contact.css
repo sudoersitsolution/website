@@ -19,6 +19,39 @@
   max-width: 60ch;
 }
 
+.contact__icons{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact__icons svg{
+  width: 1rem;
+  fill: var(--clr-rose);
+}
+
+.contact__numbers{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact__number-one,.contact__number-two{
+  margin-left: .5rem;
+  font-size: var(--size-base);
+
+}
+
+.contact__number{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.contact__numbers svg{
+  width: 1rem;
+  fill: var(--clr-rose);
+}
+
 .contact__btn {
   font-size: var(--size-sm);
 }

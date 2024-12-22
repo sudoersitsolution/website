@@ -52,9 +52,9 @@
   list-style-type: '\1F44D';
   margin-bottom: 1rem;
 }
-.about__ul > li{
+.about__ul > p{
  margin-bottom: 1rem;
- color:var(--clr-slate400)
+ color:var(--clr-slate600)
 }
 .about__span{
   color: var(--clr-light);

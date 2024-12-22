@@ -15,7 +15,7 @@
 .project__subtitle{
   text-align: center;
   font-size: var(--size-sm);
-  color: var(--clr-slate400);
+  color: var(--clr-slate600);
   margin-bottom: 1rem;
 }
 
@@ -31,9 +31,11 @@
 .project__item{
   display: flex;
   justify-content: space-between;
-  color: var(--clr-slate400);
-  font-size: var(--size-base);
   gap: 1rem;
+}
+.project__item > p{
+  font-size: var(--size-base);
+  color: var(--clr-slate600);
 }
 
 /*xs*/
@@ -60,7 +62,7 @@
   .project__title{
     font-size: var(--size-4xl);
   }
-  .project__item{
+  .project__item > p{
     font-size: var(--size-lg);
   }
 }
