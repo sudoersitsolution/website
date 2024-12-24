@@ -74,10 +74,16 @@ const projectAddItemWeb = () => {
     header.addEventListener('click', function () {
       const item = this.nextElementSibling;
       const secondChild = this.children[1]; 
-      if(secondChild.textContent=="+")
-        secondChild.textContent= "-"
-      else
-        secondChild.textContent="+"
+
+        accordionHeadersWeb.forEach(otherItem =>{
+          if(this != otherItem && otherItem.nextElementSibling.classList.contains('active')){
+            otherItem.nextElementSibling.classList.remove('active')
+            otherItem.children[1].textContent="+"
+          }
+        })
+        secondChild.textContent=="+"
+        ? secondChild.textContent= "-"
+        :secondChild.textContent="+"
       item.classList.toggle('active');
     });
   });
