@@ -16,18 +16,6 @@ const projectAddItemWeb = () => {
 {title: "Stationary shop management system",description:"to-do description"},
 {title: "Patient Record Management system",description:"to-do description"},
 {title: "Advance attendence using QR code",description:"to-do description"},
-{ title: "Personality Prediction System Through CV Analysis", description: "to-do description" },
-{ title: "Malware Analysis and Detection Using Machine Learning Algorithm", description: "to-do description" },
-{ title: "SMS Spam Detection using Machine Learning", description: "to-do description" },
-{ title: "Sleep Disorder Prediction Using Machine Learning", description: "to-do description" },
-{ title: "Drug Addiction Prediction Using Machine Learning", description: "to-do description" },
-{ title: "Obesity Risk Prediction using Machine Learning", description: "to-do description" },
-{ title: "Health Insurance Price Prediction using Machine Learning", description: "to-do description" },
-{ title: "Smart Diabetes Prediction System Using Machine Learning Algorithms", description: "to-do description" },
-{ title: "Customer Churn Prediction using Machine Learning", description: "to-do description" },
-{ title: "Real Estate Price Prediction using Machine Learning", description: "to-do description" },
-{ title: "Bitcoin Price Prediction using Machine Learning", description: "to-do description" },
-{ title: "Sleep Time Prediction", description: "to-do description" },
   ];
 
   const itemsPerPageWeb = 5; // Number of items per page

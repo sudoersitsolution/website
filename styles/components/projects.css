@@ -15,7 +15,7 @@
 .project__subtitle{
   text-align: center;
   font-size: var(--size-sm);
-  color: var(--clr-slate600);
+  color: var(--clr-slate400);
   margin-bottom: 1rem;
 }
 .project__item-wrapper{
@@ -26,11 +26,11 @@
 }
 .project__item-description{
   margin-top:0;
-  border-left: 2px solid var(--clr-rose);
   padding: 1rem;
+  text-align: justify;
+  color: var(--clr-slate400);
+
   display: none;
-  transform: scale(0);
-  transition:  scale 0.5s ease;
 }
 .project__item-plus{
 color: var(--clr-rose);
@@ -38,9 +38,8 @@ color: var(--clr-rose);
 .active{
   display: block;
   transform: scale(1);
-}
-.project__item-description .active{
-  scale: 1;    
+  border-left: 2px solid var(--clr-rose);
+  transition: max-height 0.3s ease-in-out;
 }
 
 .pagination-web,.pagination-ai{
