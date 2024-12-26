@@ -57,15 +57,15 @@ const projectAddItem = () => {
     },
     {
       title: "TV Show Popularity Analysis Using Data Mining",
-      description:"" 
+      description:"Reality TV is the new mantra of television producers and channel executives. It is the means to increase TRP ratings and the end is always to outdo the other channels and the “similar -but-tweaked-here-and-there” shows churned out by the competition. Most of the television shows which are being telecast nowadays are reality shows specializing in dancing, singing, and acting. We conclude to build such a system that will recognize people’s sentimental comments on TV shows. The comments from the viewer will be extracted along with the viewer details such as gender, location, etc…The comments will be gathered from various sources and the entry will be maintained into the excel sheet. The excel file will contain peoples name, email id, age, gender, location and comment. Based on people’s comment and sentiments, the TV Show popularity will be rated accordingly. " 
     },
     {
       title: "Music Genres Classification using KNN System",
-      description:"" 
+      description:"The Primary objective of this project is to successfully train an ML Algorithm to be able to classify any sound byte of any piece of music as one of the common genres in music. The inherent nature of music to have recurring patterns, set tempos, and other aspects of music theory make AI/ML algorithms perfect for the job of understanding and classifying music.  the music files themselves can be considered data as they carry all technical and categorically discernable parameters of the music are self-contained in the file thereby only needing for them to be of set sample lengths/sizes and set file formats." 
     },
     {
       title: "Personality Prediction System Through CV Analysis",
-      description:"" 
+      description:"This will enable a more effective way to short list submitted candidate CVs from a large number of applicants providing a consistent and fair CV ranking policy, which can be legally justified. System will rank the experience and key skills required for particular job position. Than system will rank the CV’s based on the experience and other key skills which are required for particular job profile. This system will help the HR department to easily shortlist the candidate based on the CV ranking policy. This system will focus not only in qualification and experience but also focuses on other important aspects which are required for particular job position. This system will help the human resource department to select right candidate for particular job profile which in turn provide expert workforce for the organization." 
     },
     {
       title: "Malware Analysis and Detection Using Machine Learning Algorithm",
