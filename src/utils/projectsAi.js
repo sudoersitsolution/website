@@ -69,47 +69,43 @@ const projectAddItem = () => {
     },
     {
       title: "Malware Analysis and Detection Using Machine Learning Algorithm",
-      description:"" 
+      description:"With the rapid development of the Internet, malware became one of the major cyber threats nowadays. Any software performing malicious actions, including information stealing, espionage, etc. can be referred to as malware. Kaspersky Labs (2017) define malware as a type of computer program designed to infect a legitimate user's computer and inflict harm on it in multiple ways.The major flaw here is that signature checkers can only detect malware that has been seen before. That’s a rather large blind spot, given that hundreds of thousands of new malware variants are created every single day. Machine learning, on the other hand, can be trained to recognize the signs of good and bad files, enabling it to identify malicious patterns and detect malware – regardless of whether it’s been seen before or not." 
     },
     {
       title: "SMS Spam Detection using Machine Learning",
-      description:"" 
+      description:"The SMS Spam Detection project is a machine learning initiative designed to classify SMS messages as either spam or not spam. This model leverages advanced algorithms to analyze the content of text messages and make predictions about their nature. Developed using the Python programming language, the model is capable of performing accurate classifications." 
     },
     {
       title: "Sleep Disorder Prediction Using Machine Learning",
-      description:"" 
+      description:"The purpose of this project is to analyze factors that affect sleep health and predict which sleep disorder a person may have based on various factors such as Sleep Quality, Stress Level, BMI Index, Blood Pressure, etc. The dataset used for this project was sourced from Kaggle. The project involved data preprocessing to fill null values, exploratory data analysis (EDA), and the implementation of machine learning models to make predictions." 
     },
     {
       title: "Drug Addiction Prediction Using Machine Learning",
-    description:"" 
+    description:"This project aims to analyze and predict drug consumption patterns using various datasets that provide comprehensive information on demographics, personality traits, and drug usage. the project will explore correlations between young people and drug addiction. Additionally, machine learning algorithms will be employed to predict the most commonly consumed drugs. This analysis aims to contribute to a better understanding of drug addiction patterns and support efforts in public health and policy-making." 
     },
     {
       title: "Obesity Risk Prediction using Machine Learning",
-      description:"" 
+      description:"Obesity is a pressing global health concern, with millions affected worldwide and significant implications for morbidity, mortality, and healthcare costs. The prevalence of obesity has tripled since 1975, now affecting approximately 30% of the global population. This escalating trend underscores the urgent need to address the multifaceted risks associated with excess weight. Obesity is a leading cause of various health complications, including diabetes, heart disease, osteoarthritis, sleep apnea, strokes, and high blood pressure, significantly reducing life expectancy and increasing mortality rates. Effective prediction of obesity risk is crucial for implementing targeted interventions and promoting public health.project aims to predict obesity levels in individuals using a range of input features. Utilizing machine learning techniques, this model was trained in order to classify the obesity level based on personal, behavioral, and dietary data." 
     },
     {
       title: "Health Insurance Price Prediction using Machine Learning",
-      description:"" 
+      description:"Medical insurance costs are critical considerations in healthcare planning and financial decision-making. Understanding the factors influencing these costs is essential for both insurers and policyholders. Machine learning provides a powerful toolset to analyze and predict medical insurance expenses based on diverse variables. In this context, predictive modeling techniques such as K-Nearest Neighbors (KNN), XGBoost, Linear Regression, and Random Forest Regression have emerged as effective means to estimate and forecast medical insurance costs. By leveraging patterns and relationships within datasets derived from individual and local health information, these models contribute to more accurate predictions, assisting in risk assessment, resource allocation, and overall decision-making within the healthcare insurance domain. This repository explores the application of these machine learning models to enhance our understanding and prediction of medical insurance costs, utilizing a dataset sourced from Kaggle that encapsulates various features relevant to insurance forecasting" 
     },
     {
       title: "Smart Diabetes Prediction System Using Machine Learning Algorithms",
-    description:"" 
+    description:"The increasing prevalence of diabetes worldwide necessitates the development of effective predictive models to aid in early diagnosis and management. This project aims to leverage machine learning techniques to predict the likelihood of diabetes in individuals based on a range of medical attributes. Utilizing the PIMA Diabetes dataset, which includes various health indicators such as glucose levels, blood pressure, and body mass index, the project employs a Support Vector Machine (SVM) for classification." 
     },
     {
       title: "Customer Churn Prediction using Machine Learning",
-      description:""
-    },
-    {
-      title: "Real Estate Price Prediction using Machine Learning",
-      description:""
+      description:"In the competitive business landscape, retaining customers is crucial for sustained growth and profitability. This project aims to predict customer churn using machine learning techniques, enabling businesses to identify at-risk customers and implement targeted retention strategies. The project utilizes a dataset containing various customer attributes such as demographics, purchase history, and interaction data.  A range of machine learning algorithms are employed to build predictive models. The dataset undergoes preprocessing steps such as handling missing values, encoding categorical variables, and normalizing numerical features to ensure optimal model performance. Feature selection techniques are applied to identify the most significant predictors of churn."
     },
     {
       title: "Bitcoin Price Prediction using Machine Learning",
-      description:"" 
+      description:"The volatile nature of Bitcoin prices presents a significant challenge for investors and traders. This project aims to predict Bitcoin prices using machine learning techniques, providing valuable insights for making informed investment decisions. The project utilizes historical Bitcoin price data, including features such as opening, closing, high, and low prices, as well as trading volume." 
     },
     {
       title: "Sleep Time Prediction",
-      description:"" 
+      description:"The main objective of this  project is to analyze various lifestyle and medical variables of individuals, such as age, BMI, physical activity, sleep duration, blood pressure, etc., and use this information to predict the occurrence and type of sleep disorder they may experience. Sleep disorders, like Insomnia and Sleep Apnea, can have significant impacts on an individual's health and overall well-being. By identifying individuals at risk of sleep disorders, appropriate interventions and treatments can be provided to improve their sleep quality and overall health." 
     },
   ];
 
